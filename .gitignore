@@ -116,4 +116,3 @@ build
 # For Heroku
 ############################
 package-lock.json
-yarn.lock
