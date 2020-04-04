@@ -33,6 +33,9 @@ const Editor = ({ onChange, name, value }) => {
         headers: {
           Authorization: "Bearer " + jwtToken
       }
+    },
+    mediaEmbed: {
+      previewsInData: true
     }
   }}
   />
