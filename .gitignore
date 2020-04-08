@@ -113,6 +113,8 @@ build
 
 
 ############################
-# For Heroku
+# Custom
 ############################
 package-lock.json
+.env
+sendgrid.env

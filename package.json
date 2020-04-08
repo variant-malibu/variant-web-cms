@@ -13,7 +13,10 @@
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^18.0.0",
     "@ckeditor/ckeditor5-react": "^2.1.0",
+    "@sendgrid/mail": "^7.0.0",
     "ckeditor-build-with-simple-upload-provider-strapi": "^1.0.7",
+    "dotenv": "^8.2.0",
+    "find-config": "^1.0.0",
     "knex": "<0.20.0",
     "pg": "^7.18.2",
     "sqlite3": "latest",
