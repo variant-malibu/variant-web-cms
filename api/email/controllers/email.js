@@ -20,14 +20,15 @@ module.exports = {
 
     try {
       sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+      console.log("sendgrid api key:", process.env.SENDGRID_API_KEY)
       strapi.log.info('email/controllers/email.send ', ctx.request.body)
       const to = process.env.EMAIL_TO
-      const {from, subject, text} = ctx.request.body
+      const {from, subject, html} = ctx.request.body
       const msg = {
         to,
         from,
         subject,
-        text
+        html
       }
       const [Response] = await sgMail.send(msg)
       if (Response.statusCode > 100 && Response.statusCode < 300) {
@@ -37,7 +38,7 @@ module.exports = {
       }
     } catch (err) {
       strapi.log.info(err)
-      return `There was an error! Contact us at ${process.env.EMAIL_TO}`
+      return `There was an error! ${process.env.SENDGRID_API_KEY} Contact us at ${process.env.EMAIL_TO}`
     }
   }
 }
