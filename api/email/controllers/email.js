@@ -32,7 +32,7 @@ module.exports = {
       }
       const [Response] = await sgMail.send(msg)
       if (Response.statusCode > 100 && Response.statusCode < 300) {
-        return 'Your message has been sucessfully delivered!'
+        return 'Thank you for your submission! We will get back to you as soon as possible.'
       } else {
         return `Ooops. Your message has failed to devliver. Contact us at ${process.env.EMAIL_TO}`
       }
