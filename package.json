@@ -19,7 +19,7 @@
     "find-config": "^1.0.0",
     "knex": "<0.20.0",
     "pg": "^7.18.2",
-    "sqlite3": "latest",
+    "sqlite3": "^4.1.1",
     "strapi": "3.0.0-beta.19.3",
     "strapi-admin": "3.0.0-beta.19.3",
     "strapi-connector-bookshelf": "3.0.0-beta.19.3",
