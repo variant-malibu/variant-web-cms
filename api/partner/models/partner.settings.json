@@ -3,22 +3,22 @@
   "connection": "default",
   "collectionName": "partners",
   "info": {
-    "name": "Partners"
+    "name": "Partner"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string",
       "required": true
     },
-    "description": {
+    "Description": {
       "type": "text",
-      "required": false
+      "required": true
     },
-    "image": {
+    "Image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
