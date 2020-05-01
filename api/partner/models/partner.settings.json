@@ -10,15 +10,15 @@
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string",
       "required": true
     },
-    "description": {
+    "Description": {
       "type": "text",
       "required": true
     },
-    "image": {
+    "Image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
