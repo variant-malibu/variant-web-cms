@@ -1,0 +1,11 @@
+{
+  "provider": "aws-s3",
+  "providerOptions": {
+    "accessKeyId": "AKIAJ5BNL2W7ZC6G473Q",
+    "secretAccessKey": "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",
+    "region": "us-west-2",
+    "params": {
+      "Bucket": "variant-web-cms"
+    }
+  }
+}
