@@ -27,7 +27,7 @@
     "url": {
       "type": "string",
       "private": false,
-      "required": true
+      "required": false
     }
   }
 }
