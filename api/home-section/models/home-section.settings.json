@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_sections",
+  "info": {
+    "name": "HomeSection"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "order": {
+      "type": "integer",
+      "max": 10,
+      "min": 0,
+      "required": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "section": {
+      "type": "dynamiczone",
+      "components": [
+        "section.panel"
+      ]
+    }
+  }
+}
